@@ -4,6 +4,10 @@ communication with google services
 1. Get information for current location  eg. address , geolocation
 2. integrating google places api that can search information of stores by given keyword.
 
+#important 
+- If you use location services , it is necessary to add two values to your info.plist above iOS8
+  ．NSLocationWhenInUseUsageDescription
+  ．NSLocationAlwaysUsageDescription
 #How to use
 
 1. get current location and information
