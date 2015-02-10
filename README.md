@@ -8,7 +8,7 @@ communication with google services
 
 1. get current location and information
   
-#import LocationMananager
+ - LocationMananager
 
 [[LocationManager defaultManager] updateCurrentAddress];
 
@@ -16,5 +16,5 @@ after calling the method , then you can get address information directly
 
 2. google places api
 
-#import "GoogleParserUtils.h"
+ - GoogleParserUtils
 
