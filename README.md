@@ -10,9 +10,9 @@ communication with google services
   
  - LocationMananager
 
-[[LocationManager defaultManager] updateCurrentAddress];
+    －[[LocationManager defaultManager] updateCurrentAddress];
 
-after calling the method , then you can get address information directly
+．After calling the method , then you can get address information directly
 
 2. google places api
 
