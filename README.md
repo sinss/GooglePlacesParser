@@ -30,5 +30,3 @@ communication with google services
         //do your job here
     }];
 ```
- - 
-
