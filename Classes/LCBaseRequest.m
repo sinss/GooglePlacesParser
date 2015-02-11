@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 Good-idea Consulgint Inc. All rights reserved.
 //
 
-#import "BaseRequest.h"
+#import "LCBaseRequest.h"
 #import <UIKit/UIKit.h>
 
-@implementation BaseRequest
+@implementation LCBaseRequest
 
 - (id)initWithUrl:(NSURL*)url param:(NSDictionary*)dict timeout:(NSTimeInterval)timeout httpMethod:(NSString *)method userPostBody:(BOOL)usePostBody
 {

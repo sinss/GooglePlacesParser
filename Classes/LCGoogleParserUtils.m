@@ -6,19 +6,19 @@
 //  Copyright (c) 2015 Good-idea Consulgint Inc. All rights reserved.
 //
 
-#import "GoogleParserUtils.h"
+#import "LCGoogleParserUtils.h"
 #import <CoreLocation/CoreLocation.h>
 #import "NSData+JsonParser.h"
 
-@implementation GoogleParserUtils
+@implementation LCGoogleParserUtils
 
-+ (GoogleParserUtils*)sharedInstnce
++ (LCGoogleParserUtils*)sharedInstnce
 {
     static id instance = nil;
     static dispatch_once_t onceToken;
     
     dispatch_once(&onceToken, ^{
-        instance = [[GoogleParserUtils alloc] init];
+        instance = [[LCGoogleParserUtils alloc] init];
     });
     
     return instance;

@@ -7,8 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
-#import "LocationManager.h"
+#import "LCLocationManager.h"
 
 @interface AppDelegate ()
 
@@ -28,7 +27,7 @@
     /*
      Start update current location for this device
      */
-    [[LocationManager defaultManager] startUpdatingLocation];
+    [[LCLocationManager defaultManager] startUpdatingLocation];
     
     return YES;
 }

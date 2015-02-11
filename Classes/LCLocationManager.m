@@ -6,27 +6,27 @@
 //  Copyright (c) 2014 Perfectidea. All rights reserved.
 //
 
-#import "LocationManager.h"
-#import "RequestManager.h"
+#import "LCLocationManager.h"
+#import "LCRequestManager.h"
 #import "NSData+JsonParser.h"
 
 #define regionIdentifier @"regionIdentifier"
 
-@interface LocationManager()
+@interface LCLocationManager()
 
 @property (nonatomic, strong) NSTimer *timer;
 
 @end
 
-@implementation LocationManager
+@implementation LCLocationManager
 
-+ (LocationManager*)defaultManager
++ (LCLocationManager*)defaultManager
 {
     static id instance = nil;
     static dispatch_once_t onceToken;
     
     dispatch_once(&onceToken, ^{
-        instance = [[LocationManager alloc] init];
+        instance = [[LCLocationManager alloc] init];
     });
     
     return instance;
@@ -242,7 +242,7 @@
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://maps.google.com/maps/api/geocode/json?latlng=%f,%f&sensor=false",self.getCurrentLocation.coordinate.latitude, self.getCurrentLocation.coordinate.longitude]];
     
     
-    [[RequestManager defaultManager] requestWith:url param:@{} httpMethod:kPostMethod usePostBody:NO completion:^(PFRequestTag tag, NSData *data) {
+    [[LCRequestManager defaultManager] requestWith:url param:@{} httpMethod:kPostMethod usePostBody:NO completion:^(PFRequestTag tag, NSData *data) {
         if (data)
         {
             NSDictionary *dict = [data parseToAddress];
@@ -271,7 +271,7 @@
 {
     //@"http://maps.google.com/maps/api/geocode/json?address=%E5%8F%B0%E5%8C%97%E5%B8%82%E7%91%9E%E5%85%89%E8%B7%AF480%E8%99%9F&sensor=true"
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://maps.google.com/maps/api/geocode/json?address=%@&sensor=false", address]];
-    [[RequestManager defaultManager] requestWith:url param:@{} httpMethod:kPostMethod usePostBody:NO completion:^(PFRequestTag tag, NSData *data){
+    [[LCRequestManager defaultManager] requestWith:url param:@{} httpMethod:kPostMethod usePostBody:NO completion:^(PFRequestTag tag, NSData *data){
     
         [[NSNotificationCenter defaultCenter] postNotificationName:LOCATION_UPDATED_EVENT object:nil];
     } falure:^(PFRequestTag tag, NSError *error){

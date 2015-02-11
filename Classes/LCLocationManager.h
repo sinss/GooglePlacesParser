@@ -14,7 +14,7 @@
 #define LOCATION_UPDATED_EVENT @"CurrentLocationUpdated"
 typedef void (^GeocodeBlock) (CLLocation *location, BOOL success);
 
-@interface LocationManager : NSObject <CLLocationManagerDelegate>
+@interface LCLocationManager : NSObject <CLLocationManagerDelegate>
 
 /*
  informations for current locations
@@ -27,7 +27,7 @@ typedef void (^GeocodeBlock) (CLLocation *location, BOOL success);
 @property (strong, nonatomic) NSString *currentLevel4;
 @property (strong, nonatomic) NSDictionary *currentInformations;
 
-+ (LocationManager*)defaultManager;
++ (LCLocationManager*)defaultManager;
 
 - (id)initwithSometype:(NSInteger)type;
 

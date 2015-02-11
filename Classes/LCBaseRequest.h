@@ -30,7 +30,7 @@ typedef NS_ENUM(NSUInteger, PFRequestTag)
 typedef void (^completionBlock) (PFRequestTag tag, NSData *responseData);
 typedef void (^falureBlock) (PFRequestTag tag, NSError *error);
 
-@interface BaseRequest : NSObject <NSURLConnectionDataDelegate>
+@interface LCBaseRequest : NSObject <NSURLConnectionDataDelegate>
 {
     PFRequestTag tag;
 }

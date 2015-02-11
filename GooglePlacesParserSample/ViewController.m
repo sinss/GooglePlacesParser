@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "LocationManager.h"
+#import "LCLocationManager.h"
 #import "AppDelegate.h"
 #import "MapViewController.h"
 
@@ -48,7 +48,7 @@ static NSString *cellIdentifier = @"cellIdentifier";
     /*
      trigger location manger to update current address
      */
-    [[LocationManager defaultManager] updateCurrentAddress];
+    [[LCLocationManager defaultManager] updateCurrentAddress];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -80,12 +80,12 @@ static NSString *cellIdentifier = @"cellIdentifier";
     {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdentifier];
     }
-    NSDictionary *dict = [LocationManager defaultManager].currentInformations;
+    NSDictionary *dict = [LCLocationManager defaultManager].currentInformations;
     switch (indexPath.row)
     {
         case TBSectionAddress:
             cell.textLabel.text = [NSString stringWithFormat:@"address"];
-            cell.detailTextLabel.text = [LocationManager defaultManager].currentAddress;
+            cell.detailTextLabel.text = [LCLocationManager defaultManager].currentAddress;
             break;
         case TBSectionCountry:
             cell.textLabel.text = [NSString stringWithFormat:@"country"];
@@ -109,19 +109,19 @@ static NSString *cellIdentifier = @"cellIdentifier";
             break;
         case TBSectionLevel1:
             cell.textLabel.text = [NSString stringWithFormat:@"level 1"];
-            cell.detailTextLabel.text = [LocationManager defaultManager].currentLevel1;
+            cell.detailTextLabel.text = [LCLocationManager defaultManager].currentLevel1;
             break;
         case TBSectionLevel2:
             cell.textLabel.text = [NSString stringWithFormat:@"level 2"];
-            cell.detailTextLabel.text = [LocationManager defaultManager].currentLevel2;
+            cell.detailTextLabel.text = [LCLocationManager defaultManager].currentLevel2;
             break;
         case TBSectionLevel3:
             cell.textLabel.text = [NSString stringWithFormat:@"level 3"];
-            cell.detailTextLabel.text = [LocationManager defaultManager].currentLevel3;
+            cell.detailTextLabel.text = [LCLocationManager defaultManager].currentLevel3;
             break;
         case TBSectionLevel4:
             cell.textLabel.text = [NSString stringWithFormat:@"level 4"];
-            cell.detailTextLabel.text = [LocationManager defaultManager].currentLevel4;
+            cell.detailTextLabel.text = [LCLocationManager defaultManager].currentLevel4;
             break;
     }
     

@@ -14,9 +14,9 @@
 typedef void (^ParserBlock) (BOOL success, NSArray *items);
 
 @class CLLocation;
-@interface GoogleParserUtils : NSObject
+@interface LCGoogleParserUtils : NSObject
 
-+ (GoogleParserUtils*)sharedInstnce;
++ (LCGoogleParserUtils*)sharedInstnce;
 
 /*
  Parse Places for autocomplete

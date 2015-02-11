@@ -8,8 +8,8 @@
 
 #import "MapViewController.h"
 #import <CoreLocation/CoreLocation.h>
-#import "GoogleParserUtils.h"
-#import "LocationManager.h"
+#import "LCGoogleParserUtils.h"
+#import "LCLocationManager.h"
 #import "MapAnnotation.h"
 
 @interface MapViewController()
@@ -80,9 +80,9 @@
 
 - (void)getSpotsByCurrentLocation
 {
-    CLLocation *currentLocation = [LocationManager defaultManager].getCurrentLocation;
+    CLLocation *currentLocation = [LCLocationManager defaultManager].getCurrentLocation;
     
-    [[GoogleParserUtils sharedInstnce] parsePlacesInformationWithKeyword:@"7-11" location:currentLocation completion:^(BOOL success, NSArray *items) {
+    [[LCGoogleParserUtils sharedInstnce] parsePlacesInformationWithKeyword:@"7-11" location:currentLocation completion:^(BOOL success, NSArray *items) {
         for (NSDictionary *dict in items)
         {
             NSLog(@"items : %@", dict[@"description"]);
@@ -99,7 +99,7 @@
     span.latitudeDelta = 0.02f;
     span.longitudeDelta = 0.02f;
     MKCoordinateRegion region;
-    region.center = [LocationManager defaultManager].getCurrentLocation.coordinate;
+    region.center = [LCLocationManager defaultManager].getCurrentLocation.coordinate;
     region.span = span;
     self.mapView.region = region;
     [self.mapView removeAnnotations:self.mapView.annotations];
@@ -107,12 +107,12 @@
 
 - (void)reloadMap
 {
-    CLLocation *currentLocation = [LocationManager defaultManager].getCurrentLocation;
+    CLLocation *currentLocation = [LCLocationManager defaultManager].getCurrentLocation;
     NSInteger counter = 0;
     for (NSDictionary *dict in _stores)
     {
         __block NSInteger index = counter;
-        [[GoogleParserUtils sharedInstnce] parsePlacesDtailWithPlace:dict[@"place_id"] location:currentLocation completion:^(BOOL success, NSArray *items){
+        [[LCGoogleParserUtils sharedInstnce] parsePlacesDtailWithPlace:dict[@"place_id"] location:currentLocation completion:^(BOOL success, NSArray *items){
             @autoreleasepool {
                 NSDictionary *detail = items[0];
                 CLLocationDegrees latitude = [detail[@"latitude"] doubleValue];

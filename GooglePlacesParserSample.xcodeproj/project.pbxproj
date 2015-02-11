@@ -14,14 +14,14 @@
 		B301A0511A89BF4200682952 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B301A0501A89BF4200682952 /* Images.xcassets */; };
 		B301A0541A89BF4200682952 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B301A0521A89BF4200682952 /* LaunchScreen.xib */; };
 		B301A0601A89BF4200682952 /* GooglePlacesParserSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B301A05F1A89BF4200682952 /* GooglePlacesParserSampleTests.m */; };
-		B301A06C1A89C00D00682952 /* GoogleParserUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B301A06B1A89C00D00682952 /* GoogleParserUtils.m */; };
-		B301A0751A89C05900682952 /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B301A06E1A89C05900682952 /* BaseRequest.m */; };
-		B301A0761A89C05900682952 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B301A0701A89C05900682952 /* LocationManager.m */; };
-		B301A0771A89C05900682952 /* NSData+JsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B301A0721A89C05900682952 /* NSData+JsonParser.m */; };
-		B301A0781A89C05900682952 /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B301A0741A89C05900682952 /* RequestManager.m */; };
 		B301A07B1A89DA0C00682952 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B301A07A1A89DA0C00682952 /* MapViewController.m */; };
 		B301A07D1A89DB1300682952 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B301A07C1A89DB1300682952 /* MapKit.framework */; };
-		B301A0801A89E16E00682952 /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B301A07F1A89E16E00682952 /* MapAnnotation.m */; };
+		B301A09A1A8B00EF00682952 /* LCBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B301A08E1A8B00EF00682952 /* LCBaseRequest.m */; };
+		B301A09B1A8B00EF00682952 /* LCGoogleParserUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B301A0901A8B00EF00682952 /* LCGoogleParserUtils.m */; };
+		B301A09C1A8B00EF00682952 /* LCLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B301A0921A8B00EF00682952 /* LCLocationManager.m */; };
+		B301A09D1A8B00EF00682952 /* LCRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B301A0941A8B00EF00682952 /* LCRequestManager.m */; };
+		B301A09E1A8B00EF00682952 /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B301A0961A8B00EF00682952 /* MapAnnotation.m */; };
+		B301A09F1A8B00EF00682952 /* NSData+JsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B301A0991A8B00EF00682952 /* NSData+JsonParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,21 +48,21 @@
 		B301A0591A89BF4200682952 /* GooglePlacesParserSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GooglePlacesParserSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B301A05E1A89BF4200682952 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B301A05F1A89BF4200682952 /* GooglePlacesParserSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GooglePlacesParserSampleTests.m; sourceTree = "<group>"; };
-		B301A06A1A89C00D00682952 /* GoogleParserUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleParserUtils.h; sourceTree = "<group>"; };
-		B301A06B1A89C00D00682952 /* GoogleParserUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleParserUtils.m; sourceTree = "<group>"; };
-		B301A06D1A89C05900682952 /* BaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRequest.h; sourceTree = "<group>"; };
-		B301A06E1A89C05900682952 /* BaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRequest.m; sourceTree = "<group>"; };
-		B301A06F1A89C05900682952 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
-		B301A0701A89C05900682952 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
-		B301A0711A89C05900682952 /* NSData+JsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+JsonParser.h"; sourceTree = "<group>"; };
-		B301A0721A89C05900682952 /* NSData+JsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+JsonParser.m"; sourceTree = "<group>"; };
-		B301A0731A89C05900682952 /* RequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestManager.h; sourceTree = "<group>"; };
-		B301A0741A89C05900682952 /* RequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestManager.m; sourceTree = "<group>"; };
 		B301A0791A89DA0C00682952 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		B301A07A1A89DA0C00682952 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		B301A07C1A89DB1300682952 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		B301A07E1A89E16E00682952 /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
-		B301A07F1A89E16E00682952 /* MapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotation.m; sourceTree = "<group>"; };
+		B301A08D1A8B00EF00682952 /* LCBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCBaseRequest.h; sourceTree = "<group>"; };
+		B301A08E1A8B00EF00682952 /* LCBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCBaseRequest.m; sourceTree = "<group>"; };
+		B301A08F1A8B00EF00682952 /* LCGoogleParserUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCGoogleParserUtils.h; sourceTree = "<group>"; };
+		B301A0901A8B00EF00682952 /* LCGoogleParserUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCGoogleParserUtils.m; sourceTree = "<group>"; };
+		B301A0911A8B00EF00682952 /* LCLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLocationManager.h; sourceTree = "<group>"; };
+		B301A0921A8B00EF00682952 /* LCLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLocationManager.m; sourceTree = "<group>"; };
+		B301A0931A8B00EF00682952 /* LCRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCRequestManager.h; sourceTree = "<group>"; };
+		B301A0941A8B00EF00682952 /* LCRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCRequestManager.m; sourceTree = "<group>"; };
+		B301A0951A8B00EF00682952 /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
+		B301A0961A8B00EF00682952 /* MapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotation.m; sourceTree = "<group>"; };
+		B301A0981A8B00EF00682952 /* NSData+JsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+JsonParser.h"; sourceTree = "<group>"; };
+		B301A0991A8B00EF00682952 /* NSData+JsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+JsonParser.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +106,7 @@
 		B301A0421A89BF4200682952 /* GooglePlacesParserSample */ = {
 			isa = PBXGroup;
 			children = (
-				B301A0691A89C00D00682952 /* Classes */,
+				B301A08C1A8B00EF00682952 /* Classes */,
 				B301A0471A89BF4200682952 /* AppDelegate.h */,
 				B301A0481A89BF4200682952 /* AppDelegate.m */,
 				B301A04A1A89BF4200682952 /* ViewController.h */,
@@ -147,24 +147,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B301A0691A89C00D00682952 /* Classes */ = {
+		B301A08C1A8B00EF00682952 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				B301A06D1A89C05900682952 /* BaseRequest.h */,
-				B301A06E1A89C05900682952 /* BaseRequest.m */,
-				B301A06F1A89C05900682952 /* LocationManager.h */,
-				B301A0701A89C05900682952 /* LocationManager.m */,
-				B301A0711A89C05900682952 /* NSData+JsonParser.h */,
-				B301A0721A89C05900682952 /* NSData+JsonParser.m */,
-				B301A0731A89C05900682952 /* RequestManager.h */,
-				B301A0741A89C05900682952 /* RequestManager.m */,
-				B301A06A1A89C00D00682952 /* GoogleParserUtils.h */,
-				B301A06B1A89C00D00682952 /* GoogleParserUtils.m */,
-				B301A07E1A89E16E00682952 /* MapAnnotation.h */,
-				B301A07F1A89E16E00682952 /* MapAnnotation.m */,
+				B301A08D1A8B00EF00682952 /* LCBaseRequest.h */,
+				B301A08E1A8B00EF00682952 /* LCBaseRequest.m */,
+				B301A08F1A8B00EF00682952 /* LCGoogleParserUtils.h */,
+				B301A0901A8B00EF00682952 /* LCGoogleParserUtils.m */,
+				B301A0911A8B00EF00682952 /* LCLocationManager.h */,
+				B301A0921A8B00EF00682952 /* LCLocationManager.m */,
+				B301A0931A8B00EF00682952 /* LCRequestManager.h */,
+				B301A0941A8B00EF00682952 /* LCRequestManager.m */,
+				B301A0951A8B00EF00682952 /* MapAnnotation.h */,
+				B301A0961A8B00EF00682952 /* MapAnnotation.m */,
+				B301A0971A8B00EF00682952 /* util */,
 			);
 			path = Classes;
 			sourceTree = SOURCE_ROOT;
+		};
+		B301A0971A8B00EF00682952 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				B301A0981A8B00EF00682952 /* NSData+JsonParser.h */,
+				B301A0991A8B00EF00682952 /* NSData+JsonParser.m */,
+			);
+			path = util;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -266,16 +274,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B301A0761A89C05900682952 /* LocationManager.m in Sources */,
+				B301A09D1A8B00EF00682952 /* LCRequestManager.m in Sources */,
+				B301A09B1A8B00EF00682952 /* LCGoogleParserUtils.m in Sources */,
+				B301A09E1A8B00EF00682952 /* MapAnnotation.m in Sources */,
 				B301A04C1A89BF4200682952 /* ViewController.m in Sources */,
-				B301A06C1A89C00D00682952 /* GoogleParserUtils.m in Sources */,
 				B301A07B1A89DA0C00682952 /* MapViewController.m in Sources */,
-				B301A0751A89C05900682952 /* BaseRequest.m in Sources */,
+				B301A09A1A8B00EF00682952 /* LCBaseRequest.m in Sources */,
+				B301A09C1A8B00EF00682952 /* LCLocationManager.m in Sources */,
+				B301A09F1A8B00EF00682952 /* NSData+JsonParser.m in Sources */,
 				B301A0491A89BF4200682952 /* AppDelegate.m in Sources */,
-				B301A0771A89C05900682952 /* NSData+JsonParser.m in Sources */,
 				B301A0461A89BF4200682952 /* main.m in Sources */,
-				B301A0781A89C05900682952 /* RequestManager.m in Sources */,
-				B301A0801A89E16E00682952 /* MapAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +474,7 @@
 				B301A0651A89BF4200682952 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B301A0661A89BF4200682952 /* Build configuration list for PBXNativeTarget "GooglePlacesParserSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +483,7 @@
 				B301A0681A89BF4200682952 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
