@@ -11,6 +11,13 @@ communication with google services
 - If you are using location services , it is necessary to add two values to your info.plist above iOS8
   ．NSLocationWhenInUseUsageDescription
   ．NSLocationAlwaysUsageDescription
+
+#Screenshot
+
+![](https://github.com/sinss/GooglePlacesParser/blob/master/screenshots/screenshot1.png)
+
+![](https://github.com/sinss/GooglePlacesParser/blob/master/screenshots/screenshot2.png)
+
 #How to use
 
 1. get current location and information
