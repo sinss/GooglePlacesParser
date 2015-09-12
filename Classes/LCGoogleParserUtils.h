@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-#warning Please Enter your google api key
-#define googleApiKey @"< Please Enter your google api key >"
+#warning NOTE !! Please Enter your google api key
+#warning NOTE !! It Must replaced your own google api key
+#define googleApiKey @"< put your google api key in here >"
 
 typedef void (^ParserBlock) (BOOL success, NSArray *items);
 

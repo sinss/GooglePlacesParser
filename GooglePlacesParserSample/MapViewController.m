@@ -83,11 +83,14 @@
     CLLocation *currentLocation = [LCLocationManager defaultManager].getCurrentLocation;
     
     [[LCGoogleParserUtils sharedInstnce] parsePlacesInformationWithKeyword:@"7-11" location:currentLocation completion:^(BOOL success, NSArray *items) {
-        for (NSDictionary *dict in items)
+        if (success)
         {
-            NSLog(@"items : %@", dict[@"description"]);
+            for (NSDictionary *dict in items)
+            {
+                NSLog(@"items : %@", dict[@"description"]);
+            }
+            self.stores = items;
         }
-        self.stores = items;
         [self resetMap];
         [self reloadMap];
     }];
